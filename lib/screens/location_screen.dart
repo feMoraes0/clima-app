@@ -26,6 +26,13 @@ class _LocationScreenState extends State<LocationScreen> {
 
   void updateUI(weatherData) {
     setState(() {
+      if (weatherData == null) {
+        this.temperature = 0;
+        this.weatherMessage = 'Error to get online data.';
+        this.weatherIcon = '';
+        this.cityName = 'Error';
+        return;
+      }
       var condition = weatherData['weather'][0]['id'];
       this.weatherIcon = this.weatherModel.getWeatherIcon(condition);
       this.temperature = weatherData['main']['temp'].toInt();
@@ -56,7 +63,12 @@ class _LocationScreenState extends State<LocationScreen> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                   FlatButton(
-                    onPressed: () {},
+                    onPressed: () async {
+                      print('solicitou');
+                      var weatherData =
+                          await this.weatherModel.getCurrentWeatherData();
+                      updateUI(weatherData);
+                    },
                     child: Icon(
                       Icons.near_me,
                       size: 50.0,
