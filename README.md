@@ -1,34 +1,34 @@
-![App Brewery Banner](https://github.com/londonappbrewery/Images/blob/master/AppBreweryBanner.png)
+<h1 align="center">Clima App</h1>
 
+<p align="center">
+  <img width="200" src="https://github.com/feMoraes0/project-prints/blob/master/clima-app/print-001.png"/>
+  <img width="200" src="https://github.com/feMoraes0/project-prints/blob/master/clima-app/print-002.png"/>
+</p>
 
-# Clima ☁
-
-## Our Goal
-
+## Objectives and Challenges
 The objective of this tutorial is to learn about asynchronous programming in Dart. We'll look at how to carry out time consuming tasks such as getting device location and networking to get data from the internet. 
 
+## How to use
 
-## What you will create
+To clone and run this application, you'll need [Git](https://git-scm.com/downloads) and [Flutter](https://flutter.dev/docs/get-started/install) installed on your computer. From your command line:
 
-We’re going to make a weather app inspired by the beautiful designs made by [Olia Gozha](https://dribbble.com/shots/4663154-). By the end of the module, you'll be able to find out the live weather data in the current location of the device as well as the weather for any city you can think of!
+```
+# Clone this repository
+$ git clone https://github.com/feMoraes0/clima-app.git
 
-![Finished App](https://github.com/londonappbrewery/Images/blob/master/clima-demo.gif)
+# Go into the repository
+$ cd clima-app
 
-## What you will learn
+# Install dependencies
+$ flutter packages get
 
-- How to use Dart to perform asynchronous tasks.
-- Understand async and await.
-- Learn about Futures and how to work with them.
-- How to network with the Dart http package.
-- What APIs are and how to use them to get data from the internet.
-- What JSONs are and how to parse them using the Dart convert package.
-- How to pass data forwards and backwards between screens using the Navigator.
-- How to handle exceptions in Dart using try/catch/throw.
-- Learn about the lifecycle of Stateful Widgets and how to override them.
-- How to use the Geolocator package to get live location data for both iOS and Android.
-- How to use the TextField Widget to take user input.
+# Run the app
+$ flutter run
+```
 
+## Credits
+ - [Udemy Course with Angela Yu](https://www.udemy.com/course/flutter-bootcamp-with-dart/)
 
->This is a companion project to The App Brewery's Complete Flutter Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
-
-![End Banner](https://github.com/londonappbrewery/Images/blob/master/readme-end-banner.png)
+## Contact
+  - <a target="_blank" href="https://www.linkedin.com/in/fernando-moraes-48a26916a/">LinkedIn</a>
+  - <a target="_blank" href="mailto:fernandomoraes.lopes@gmail.com">E-mail</a>
